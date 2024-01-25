@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "./Button";
 
-function FormAddFriend({ onAddFriend, setShowAddFriend }) {
+function FormAddFriend({ onAddFriend }) {
   const [name, setName] = useState("");
   const [image, setImage] = useState("https://i.pravatar.cc/48?u=8463");
 
@@ -24,7 +24,6 @@ function FormAddFriend({ onAddFriend, setShowAddFriend }) {
 
     setName("");
     setImage("");
-    setShowAddFriend(false);
   }
 
   return (
