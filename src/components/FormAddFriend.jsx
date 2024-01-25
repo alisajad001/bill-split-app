@@ -16,7 +16,7 @@ function FormAddFriend({ onAddFriend }) {
     const newFriend = {
       id,
       name,
-      image: `https://i.pravatar.cc/48?u=${id}`,
+      image: `${image}?u=${id}`,
       balance: 0,
     };
 
@@ -27,7 +27,7 @@ function FormAddFriend({ onAddFriend }) {
   }
 
   return (
-    <form className="form-add-friend">
+    <form className="form-add-friend" onSubmit={handleSubmit}>
       <label>🧍‍♂️ Friend name</label>
       <input
         type="text"
