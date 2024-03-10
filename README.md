@@ -1,1 +1,3 @@
-# React tutorial following project
+# Bill Split React App
+
+- This README will be updated soon...
